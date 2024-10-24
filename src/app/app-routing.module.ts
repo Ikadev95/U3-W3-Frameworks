@@ -10,7 +10,7 @@ const routes: Routes = [
   {
     path: 'private',
     loadChildren:() => import('./pages/private/private.module').then (m =>m.PrivateModule),
-    canActivate: [PrivGuardGuard]
+    /* canActivate: [PrivGuardGuard] */
   },
   {
     path: 'shop',
